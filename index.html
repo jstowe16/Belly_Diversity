@@ -12,17 +12,32 @@
 <body>
 
   <div class="container">
+    <div class="bg-success p-2 text-dark bg-opacity-10">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
+     <!-- <div class="col-md-12 jumbotron text-center">
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
+      </div> -->
+      <!-- Jumbotron -->
+      <div class="p-5 text-center bg-image rounded-3" style="
+      background-image: url('https://www.alfa.com/media/CACHE/images/6518cc7d6707dbdc0ed8a815a2228d19.jpg');
+      height: 400px;
+      ">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3">Belly Button Biodiversity Dashboard</h1>
+          <h4 class="mb-3">Use the interactive charts below to explore the dataset</h4>
+        </div>
       </div>
+      </div>
+      </div>
+      <!-- Jumbotron -->
     </div>
     <div class="row">
       <div class="col-md-2">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
-          <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
@@ -33,17 +48,24 @@
         </div>
       </div>
       <div class="col-md-5">
+       
         <div id="bar"></div>
+        <h5 class="text-center">Test Subject's Top 10 Bacteria by ID</h5>
+        
       </div>
       <div class="col-md-5">
+        <h3 class="text-center">Belly Button Washing Frequency</h3>
         <div id="gauge"></div>
+        <h5 class="text-center">Test Subject's Belly Button Washing Frequency...EW!</h5>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
+        <h5 class="text-center">Test Subject's Top 10 Bacteria and Count</h5>
       </div>
     </div>
+  </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
